@@ -1,0 +1,424 @@
+/*
+* /text/inc/css/pages/homepage-170427.css
+* Smallest breakpoint styling defined first
+* media queries specify styling for larger breakpoints
+*/
+
+#home .row {
+	margin-bottom: 40px;
+}
+/* XS */
+@media (max-width: 640px) {
+	#home .row {
+		margin-bottom: 20px;
+	}
+}
+#home .row:last-of-type {
+	margin-bottom: 0;
+}
+
+/* half width tile with heading and CTA */
+#slider-container {
+	z-index: 1;
+}
+
+/* Hide the slider until loaded/ready */
+#slider-container {
+	display: none;
+}
+#slider-container.slick-initialized {
+	display: block;
+}
+
+#slider-container .slick-slide {
+	position: relative;
+}
+#slider-container.slick-initialized .slick-slide .overlay {
+    position: absolute;
+    float: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 60%;
+    padding: 20% 5%;
+}
+#slider-container .slick-slide .btn-overlay {
+	display: inline-flex;
+	align-items: center;
+}
+#slider-container .slick-slide .btn-secondary {
+    background: none;
+    color: #fff;
+    border-color: #fff;
+    margin-top: 20px;
+    margin-bottom: -62px;
+}
+#slider-container .slick-slide .overlay h1,
+#slider-container .slick-slide .overlay h2 {
+	color: #fff;
+	margin-bottom: 5px;
+	text-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+	width: 100%;
+}
+#slider-container .slick-slide .lg-body {
+	font-family: "SofiaProBold";
+	font-weight: normal;
+	color: #fff;
+	text-transform: uppercase;
+	flex-grow: 1;
+	text-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+}
+/* Promo text on top */
+#slider-container .slick-slide.promo-top .lg-body {
+	flex-grow: 0;
+}
+#slider-container .slick-slide.promo-top h2 {
+	flex-grow: 1;
+}
+
+/* XS */
+@media (max-width: 640px) {
+	#slider-container.slick-initialized .slick-slide .overlay {
+		padding: 15% 12%;
+	}
+}
+/* XS */
+/* Add space between bottom tiles */
+@media (max-width: 640px) {
+	.module_image-half .wm_feature-tile {
+		margin-bottom: 10px;
+		padding: 0;
+	}
+	.module_image-half .wm_feature-tile:last-of-type {
+		margin-bottom: 0;
+	}
+}
+/* S */
+@media (min-width: 641px) and (max-width: 768px) {
+	#slider-container.slick-initialized .slick-slide .overlay {
+		padding: 10% 15%;
+	}
+}
+
+
+/*
+* Product feature module
+* contains multiple products
+*/
+.module_product-feature {
+	display: flex;
+	flex-direction: row;
+}
+.module_product-feature [class^="col-"] {
+	text-align: center;
+}
+.module_product-feature > div:not(.product) {
+    padding: 0;
+}
+.module_product-feature .heading2 {
+	width: 100%;
+}
+.module_product-feature .center {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.module_product-feature > div:not(.product) p.md-body {
+	margin-top: 10px;
+	font-family: "SofiaProBold";
+	text-transform: uppercase;
+}
+.module_product-feature .btn-primary {
+	display: inline-flex;
+	align-items: center;
+	line-height: 13px;
+	margin-top: 20px;
+}
+
+a.btn-red {
+  display: inline-flex;
+  align-items: center;
+  line-height: 13px;
+  margin-top: 20px;
+  background-color: #bc2e0b;
+  padding: 15px 35px;
+  font-family: 'SofiaProBold';
+  text-transform: uppercase;
+  font-size: 13px;
+  text-decoration: none;
+  color: #fff;
+}
+.module_product-feature h4 {
+	width: 100%;
+	margin-top: 20px;
+}
+.module_product-feature img {
+	width: 75%;
+}
+.module_product-feature .product a {
+	display: block;
+}
+.module_product-feature .product .image {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.module_product-feature .text-link {
+	background: none;
+	border: none;
+	margin: 15px auto;
+	text-decoration: underline;
+	text-transform: uppercase;
+}
+/* XS */
+@media (max-width: 640px) {
+	.module_product-feature .col-xs-6 {
+		width: 48.99%;
+	}
+	.module_product-feature .btn-primary {
+		width: 80%;
+		padding: 0;
+	    display: inline-flex;
+	    align-items: center;
+	    justify-content: center;
+	}
+	.module_product-feature .product:first-of-type {
+		margin-bottom: 20px;
+	}
+	.module_product-feature {
+		flex-wrap: wrap;
+	}
+}
+/* XS/S/M */
+@media (max-width: 640px) {
+	.module_product-feature h4 {
+		font-size: 17px;
+		line-height: 20px;
+	}
+	.module_product-feature .btn-primary {
+		padding: 5px 20px;
+	}
+}
+/* L */
+@media (min-width: 993px) {
+	.module_product-feature h4 {
+		font-size: 18px;
+		line-height: 24px;
+	}
+}
+/* M/L */
+@media (min-width: 769px) {
+	.module_product-feature {
+		align-items: flex-start;
+		padding: 0 3%;
+	}
+	.module_product-feature > div:not(.product) {
+		align-self: center;
+	}
+}
+
+
+
+
+
+
+/*
+* Full width image module
+* contains title copy and cta on left
+*/
+.module_image-full {
+	position: relative;
+}
+.module_image-full .overlay {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	padding-right: 60%;
+	padding-top: 8%;
+}
+.module_image-full h2 {
+	color: #fff;
+	text-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+}
+.module_image-full p {
+	font-family: "SofiaProBold";
+	text-transform: uppercase;
+	color: #fff;
+	margin: 10px 0;
+	text-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+}
+.module_image-full .btn-overlay {
+	margin-top: 20px;
+	display: inline-flex;
+	align-items: center;
+}
+/* S/M/L */
+@media (min-width: 641px) {
+	.module_image-full .overlay-text {
+		left: 7%;
+		width: auto;
+	}
+	.module_image-full .btn-overlay {
+		width: auto;
+	}
+}
+/* XS */
+@media (max-width: 640px) {
+	.module_image-full h1 {
+		font-size: 30px;
+	}
+	.module_image-full .overlay {
+		padding: 0;
+		display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	    align-items: center;
+	}
+}
+
+
+
+
+/*
+* Articles module
+* displays 3 different columns of article content
+*/
+.module_articles .article.video a {
+	display: inline-block;
+	width: 95%;
+}
+.module_articles .article.video strong {
+	text-transform: uppercase;
+}
+.module_articles.article.video p {
+	width: 70%;
+}
+.module_articles .article {
+	text-align: center;
+	padding: 0 1%;
+}
+.module_articles .article img {
+	width: 90%;
+}
+.module_articles .article h4 {
+	margin: 20px 0;
+}
+.module_articles .article p.sm-body {
+	margin: 0 auto;
+	width: 70%;
+}
+.module_articles .article .text-link {
+	text-decoration: underline;
+	text-transform: uppercase;
+	display: inline-block;
+}
+/* XS */
+@media (max-width: 640px) {
+	.module_articles .article.video {
+		padding: 0;
+	}
+	.module_articles .article.video a {
+		width: 100%;
+	}
+	.module_articles .article h4 {
+		margin-top: 10px;
+		margin-bottom: 0;
+	}
+	.module_articles .article p.sm-body {
+		margin: 10px auto;
+	}
+	.module_articles .article .text-link {
+		margin-bottom: 20px;
+	}
+}
+/* S/M */
+@media (min-width: 641px) and (max-width: 992px) {
+	.module_articles .article p.sm-body {
+		width: 85%;
+		margin-bottom: 10px;
+	}
+}
+/* L */
+@media (min-width: 993px) {
+	.module_articles .article a {
+		margin-bottom: 0;
+	}
+	.module_articles .article p.sm-body {
+		width: 85%;
+		margin-bottom: 10px;
+	}
+}
+
+.wm_feature-tile p.md-body {
+	margin-top: 10px;
+}
+
+/* Over-ride Bootstrap rule by Kibo stylesheet */
+.row {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+/* Homepage type styles */
+/* XS */
+@media (max-width: 640px) {
+	.heading1 {
+		font-size: 30px !important;
+		line-height: 33px !important;
+		letter-spacing: 0.03px !important;
+	}
+	.heading2 {
+		font-size: 25px !important;
+		line-height: 28px !important;
+		letter-spacing: 0.03px !important;
+	}
+	.heading3 {
+		font-size: 19px !important;
+		line-height: 22px !important;
+		letter-spacing: 0.03px !important;
+	}
+	.heading4 {
+		font-size: 17px !important;
+		line-height: 20px !important;
+		letter-spacing: 0.03px !important;
+	}
+	.sm-body {
+		font-size: 13px !important;
+		line-height: 16px !important;
+	}
+}
+/* S */
+@media (min-width: 641px) and (max-width: 768px) {
+	.lg-body {
+		font-size: 14px !important;
+	}
+}
+/* M */
+@media (min-width: 769px) and (max-width: 992px) {
+	.xs-body {
+		line-height: 16px !important;
+		letter-spacing: 0.025px !important;
+	}
+}
+/* L */
+@media (min-width: 993px) {
+	.heading3 {
+		font-size: 24px !important;
+		line-height: 30px !important;
+	}
+	.heading4 {
+		font-size: 18px !important;
+		line-height: 24px !important;
+	}
+}
